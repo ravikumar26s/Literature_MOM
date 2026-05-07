@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature Department MOM</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --bg: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        h1 { color: var(--primary); margin: 0; font-size: 2rem; text-transform: uppercase; }
+        h2 { color: var(--secondary); border-left: 5px solid var(--accent); padding-left: 15px; margin-top: 30px; }
+        h3 { color: var(--accent); margin-bottom: 10px; }
+
+        .metadata {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fff;
+            transition: transform 0.2s;
+        }
+
+        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+
+        .link-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .link-btn {
+            background: var(--accent);
+            color: white;
+            padding: 6px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .link-btn:hover { background: #2980b9; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        th { background-color: var(--primary); color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .badge {
+            background: #e74c3c;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Minutes of Meeting: Literature</h1>
+        <p><strong>Subject:</strong> Standardization of Roles and Workflow</p>
+    </header>
+
+    <div class="metadata">
+        <div>
+            <strong>Department:</strong> Literature<br>
+            <strong>Target Groups:</strong> Navi Mumbai Kalamboli Congregation & Language Group - Hindi
+        </div>
+        <div>
+            <strong>Servant Oversight:</strong> Br. Jomon<br>
+            <strong>Primary Focus:</strong> Congregation Publication Count & Group-wise stock
+        </div>
+    </div>
+
+    <h2>1. Key Points & Updates</h2>
+    <ul>
+        <li><strong>Focus Shift:</strong> Department servants are now exclusively focused on "Congregation Publication Count" and "Group-wise" stock monitoring</li>
+        <li><strong>Zero Delay:</strong> Dashboard updates must be performed immediately by designated brothers.</li>
+    </ul>
+
+    <h2>2. Department Servant Responsibilities</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h3>Br. Nitin <span class="badge">Navi Mumbai Kalamboli</span></h3>
+            <p><strong>Schedule:</strong> Last week of every month.</p>
+            <p>Responsible for updating NMKC files via OneDrive.</p>
+            <div class="link-group">
+                <a href="https://snipr.is/nmkc-lit-dashboard" class="link-btn">Dashboard</a>
+                <a href="https://snipr.is/literature-groupwise" class="link-btn">Groupwise</a>
+                <a href="https://snipr.is/lit-inventory-card" class="link-btn">Congregation Inventory</a>
+                <a href="https://snipr.is/cart-standee-posters" class="link-btn">Standee & Posters</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Br. Jomon <span class="badge">Language Group - Hindi</span></h3>
+            <p><strong>Reporting:</strong> Obtain reports between the 1st and 5th of every month.</p>
+            <p><strong>Sync Task:</strong> Update Language Group status once NMKC links are updated by Br. Nitin.</p>
+            <div class="link-group">
+                <a href="https://snipr.is/nmkc-lit-dashboard" class="link-btn">Dashboard</a>
+                <a href="https://snipr.is/language-lit-inventory" class="link-btn">Language Inventory</a>
+                <a href="https://snipr.is/lang-lit-order-received" class="link-btn">Language Orders Received</a>
+                <a href="https://snipr.is/literature-request" class="link-btn">Congregation Request Order</a>
+            </div>
+        </div>
+    </div>
+
+    <h2>3. Department Assistants Responsibilities</h2>
+    <ul>
+        <li><strong>Stock Availability:</strong> Ensure required literature is available in respective groups.</li>
+        <li><strong>Shortage Protocol:</strong> Check the Literature Dashboard first; if items are missing, order through the portal.</li>
+        <li><strong>Publisher Coordination:</strong> Liaise with publishers to identify specific requirements.</li>
+        <li><strong>Distribution:</strong> Distribute items as instructed and provide acknowledgment of completion.</li>
+    </ul>
+
+    <h2>4. General Requirements</h2>
+    <ul>
+        <li><strong>Logistics:</strong> All brothers must be available for moving stock when required.</li>
+        <li><strong>Reporting:</strong> Personnel at the Kingdom Hall report directly to the department servant and must follow instructions strictly.</li>
+    </ul>
+
+    <h2>5. Operational Workflow</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Step</th>
+                <th>Action</th>
+                <th>Responsible</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. Reporting</td>
+                <td>Collect Language Group reports (1st-5th of month).</td>
+                <td>Br. Jomon</td>
+            </tr>
+            <tr>
+                <td>2. NMKC Update</td>
+                <td>Update Dashboard and Inventory links (Last week of month).</td>
+                <td>Br. Nitin</td>
+            </tr>
+            <tr>
+                <td>3. Sync</td>
+                <td>Update Language Group links after NMKC sync.</td>
+                <td>Br. Jomon</td>
+            </tr>
+            <tr>
+                <td>4. Monitoring</td>
+                <td>Check group stock against Dashboard availability.</td>
+                <td>Assistants</td>
+            </tr>
+            <tr>
+                <td>5. Ordering</td>
+                <td>Place orders via portal for any shortages.</td>
+                <td>Assistants</td>
+            </tr>
+            <tr>
+                <td>6. Instruction</td>
+                <td>Authorize and instruct distribution to publishers.</td>
+                <td>Servant</td>
+            </tr>
+            <tr>
+                <td>7. Completion</td>
+                <td>Distribute literature and acknowledge the task.</td>
+                <td>Assistants</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <p><strong>LITERATURE DEPARTMENT</strong></p>
+        <p><b>Servant: Jomon Yohannan</b></p>
+        <p><b>Assistants: Nitin Kumar,</b> Roshan Naicker, Sagar Pathare, Udaykumar Madgiri</p>
+    </div>
+</div>
+
+</body>
+</html>
